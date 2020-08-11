@@ -1,10 +1,11 @@
 :root {
-  --first-color: #404020;
-  --second-color: #606040;
-  --third-color: #808060;
-  --fourth-color: #808040;
-  --fifth-color: #404040;
-  --sixth-color: #a0a080;
+  --main-title-color: #acac81;
+  --subtitle-color: #606040;
+  --main-text-color: #313117;
+  --background-color: #808060;
+  --background-color-light: #a0a080;
+  --footer-background: #404040;
+  
 
   font-size: 60%;
 }
@@ -14,7 +15,6 @@ body, h1, p {
 }
 
 header {
-  background-color: rgba(0, 0, 0, 0.4);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,11 +26,28 @@ header {
 }
 
 header h1 {
-  color: #fff;
+  margin-top: 24rem;
+  color: var(--main-title-color);
+  font-size: 3.2rem;
+}
 
+header p {
+  font-size: 1.6rem;
+  color: var(--subtitle-color);
 }
 
 section {
-  background-color: var(--third-color);
-  padding: 1.6rem;
+  background-color: var(--background-color);
+  padding: 3.2rem;
+}
+
+section:nth-child(odd) {
+  background-color: var(--background-color-light);
+}
+
+section p {
+  max-width: 720px;
+  margin: auto;
+  font-size: 1.6rem;
+  color: var(--main-text-color);
 }
