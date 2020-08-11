@@ -1,0 +1,36 @@
+:root {
+  --first-color: #404020;
+  --second-color: #606040;
+  --third-color: #808060;
+  --fourth-color: #808040;
+  --fifth-color: #404040;
+  --sixth-color: #a0a080;
+
+  font-size: 60%;
+}
+
+body, h1, p {
+  margin: 0;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(./img/PIXNIO-2331180-4032x3024.jpeg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+header h1 {
+  color: #fff;
+
+}
+
+section {
+  background-color: var(--third-color);
+  padding: 1.6rem;
+}
