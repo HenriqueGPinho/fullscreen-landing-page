@@ -1,9 +1,10 @@
 :root {
-  --main-title-color: #acac81;
-  --subtitle-color: #606040;
+  --main-title-color:#46462e;
+  --subtitle-color: #25251a;
   --main-text-color: #313117;
   --background-color: #808060;
   --background-color-light: #a0a080;
+  --background-color-translucent: rgba(160, 160, 128, 0.5); /*same as background-color-light, but translucent*/
   --footer-background: #404040;
   
 
@@ -14,26 +15,41 @@ body, h1, p {
   margin: 0;
 }
 
-header {
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+header, .title-background {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url(./img/PIXNIO-2331180-4032x3024.jpeg);
+}
+
+header {
+  background-image: url(./img/montanhas.jpeg);
   height: 100vh;
   background-size: cover;
   background-position: center;
 }
 
-header h1 {
+.title-background {
+  height: 12rem;
+  width: 100%;
+  background-color: var(--background-color-translucent);
   margin-top: 24rem;
-  color: var(--main-title-color);
-  font-size: 3.2rem;
 }
 
-header p {
+.main-title {
+  color: var(--main-title-color);
+  font-size: 3.2rem;
+  font-family: 'Rowdies', cursive;
+}
+
+.subtitle {
   font-size: 1.6rem;
   color: var(--subtitle-color);
+  text-shadow: 0 0 2px var(--main-title-color);
 }
 
 section {
